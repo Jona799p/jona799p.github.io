@@ -27,9 +27,9 @@ footer {
 .FortsætKnap {
     display: flex;
     text-align: center;
-    margin-top: 100vw;
+    margin-top: 79vw;
     font-size: 3vw;
-    padding: 3vw 4vw;
+    padding: 4vw 5vw;
     border: 1vw black solid;
     border-radius: 7px;
     font-family: Impact;    
@@ -39,4 +39,5 @@ footer {
     text-decoration: none;
     color: black;
     font-family: Impact;
+    font-size 10px;
 }
