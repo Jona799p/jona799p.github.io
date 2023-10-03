@@ -22,8 +22,37 @@
     display: inline-block;
    margin: 5vw;
    margin-top: 40vw;
+   text-decoration: none;
+   width: 39vw;
+   border-radius: 3%;
+}
+
+.Produkt:hover {
+   background-color: #878787;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
 }
 
  #Produkt-billed {
     width: 35vw;
+    margin-top: 3vw;
+}
+
+#Disc {
+   font-size: 5vw;
+   justify-content: left;
+   text-align: left;
+   text-decoration: none;
+   color: black;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-left: 1.5vw;
+}
+
+#pris {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 5vw;
+   text-align: left;
+   color: black;
+   margin-left: 1.5vw;
 }
