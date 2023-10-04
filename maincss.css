@@ -23,7 +23,7 @@
    margin: 5vw;
    margin-top: 40vw;
    text-decoration: none;
-   width: 90vw;
+   width: 88vw;
    border-radius: 3%;
    border: solid black 0.5px;
    height: 80vw;
@@ -38,6 +38,7 @@
  #Produkt-billed {
     width: 60vw;
     margin-top: 3vw;
+    border: 3%;
 }
 
 #Disc {
