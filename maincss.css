@@ -1,5 +1,6 @@
  body {
     margin: 0;
+    background-color: #F1F1F1;
  }
 
  header {
@@ -21,7 +22,7 @@
 .Produkt {
    display: inline-block;
    margin: 5vw;
-   margin-top: 40vw;
+   margin-top: 10vw;
    text-decoration: none;
    width: 88vw;
    border-radius: 3%;
@@ -49,7 +50,7 @@
    color: black;
    font-weight: bolder;
    margin-left: 1.5vw;
-   margin-top: 1vw;
+   margin-top: 3vw;
 }
 
 #pris {
