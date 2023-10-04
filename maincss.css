@@ -24,10 +24,10 @@
    margin: 5vw;
    margin-top: 10vw;
    text-decoration: none;
-   width: 88vw;
    border-radius: 3%;
    border: solid black 0.5px;
    height: 80vw;
+   width: 35%;
 }
 
 .Produkt:hover {
@@ -37,7 +37,7 @@
 }
 
  #Produkt-billed {
-    width: 60vw;
+    width: 30vw;
     margin-top: 3vw;
     border: 3%;
 }
@@ -49,14 +49,13 @@
    text-decoration: none;
    color: black;
    font-weight: bolder;
-   margin-left: 1.5vw;
-   margin-top: 3vw;
+   margin-left: 1%;
+   margin-top: 8%;
 }
 
 #pris {
    font-size: 5vw;
    text-align: left;
    color: black;
-   margin-left: 1.5vw;
-   margin-top: -4vw;
+   margin-left: 1%;
 }
