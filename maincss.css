@@ -19,12 +19,14 @@
 }
 
 .Produkt {
-    display: inline-block;
+   display: inline-block;
    margin: 5vw;
    margin-top: 40vw;
    text-decoration: none;
-   width: 39vw;
+   width: 90vw;
    border-radius: 3%;
+   border: solid black 0.5px;
+   height: 80vw;
 }
 
 .Produkt:hover {
@@ -34,7 +36,7 @@
 }
 
  #Produkt-billed {
-    width: 35vw;
+    width: 60vw;
     margin-top: 3vw;
 }
 
@@ -44,15 +46,15 @@
    text-align: left;
    text-decoration: none;
    color: black;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-weight: bolder;
    margin-left: 1.5vw;
    margin-top: 1vw;
 }
 
 #pris {
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    font-size: 5vw;
    text-align: left;
    color: black;
    margin-left: 1.5vw;
+   margin-top: -4vw;
 }
