@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html> 
+    <header>
+        <title>Storkereden</title>
+        <link rel="stylesheet" type="text/css" href="IndexCSS.css">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1” />
+    </header>
+    
+    
+    <body class="Body">
+    <div class="Center" style="background-color: white">
+        
+        <div class="Top">
+            <img id="TopImage" src="Billeder/Nyt%20storkereden%20logo1.png">
+        </div> 
+        
+    </div>
+
+   <div class="Center">
+        <nav class="sticky">
+            <ul>
+                <li><a href="index.html">Hovedmenu</a></li>
+                <li><a href="Hverdagen.html" style="background-color: #CDD9B6">Hverdagen</a></li>
+                <li><a href="Hvem%20er%20vi.html">Hvem er vi?</a></li>
+                <li><a href="Vores%20rammer.html">Vores rammer</a></li>
+                <li class="dropdown" onmouseleave="hidePanel()">
+                    <a class="dropdown-toggle" href="#" onmouseenter="showPanel()">Yderligere information ≡</a>
+                    <div class="sliding-panel" onmouseenter="showPanel()">
+                        <ul>
+                            <li><a href="subpage1.html">Vores målsætning</a></li>
+                            <li><a href="subpage2.html">Kursus</a></li>
+                            <li><a href="subpage3.html">Forældresamarbejde</a></li>
+                            <li><a href="subpage4.html">DGI idræt, leg & bevægelse</a></li>
+                            <li><a href="subpage5.html">Ledige pladser</a></li>
+                            <li><a href="subpage6.html">Vikar</a></li>
+                            <li><a href="subpage7.html">Kontakt</a></li>
+                            <li><a href="subpage8.html">Samarbejde</a></li>
+                            <li><a href="subpage9.html">Tilskud</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        
+   <div class="underline">
+<div class="Center">
+    <div class="Bigpagebox">
+        <div class="Pagebox">
+     <div class="Content2">
+            <p class="Content">Det er vigtig at hverdagen i Storkereden, er tryk og genkendelig for børnene. Vi serverer morgenmad til barnet, hvis det møder før kl. 7.30 og ikke har spist hjemmefra. Det vil oftest bestå af havregrød/morgenmads produkter eller brød.</p>
+            </div>
+ 
+<div class="ContentColor" style="margin-bottom: 5%">
+         <p class="Content">Der bliver serveret:</p>
+
+         <p class="Content">Formiddags mad/frugt mellem kl. 8.30-9.00.</p>
+
+         <p class="Content">Frokost ca. kl. 11.00</p>
+
+         <p class="Content">Eftermiddagsfrugt/brød ca. kl. 14.30</p>
+
+         <p class="Content">efterhånden som børnene vågner.</p></div>
+
+    <img src="Billeder/16.jpg" id="Hovedmenu">            
+            <div class="Content2">
+         <p class="Content">
+            Der tilbydes vand og letmælk til maden. Der bliver serveret et varmt måltid ca. en gang om ugen, som de større børn har været med til at forberede. Vi synes at traditioner er gode at holde fast i og vil så vidt det er muligt lave mad, der passer til årets højtider. Når vejret tillader det, gerne i foråret/sommer laver vi mad på bålet. Barnet vil få en sund og varieret kost. Ved fødselsdage er forældrene meget velkommen til at tage noget sundt med.
+        </p>
+            </div>
+        <div class="ContentColor" style="margin-bottom: 5%">
+        <p class="Content">
+            Så vidt det er muligt, børster vi tænder efter frokost, stille og roligt, så det bliver en god oplevelse. Vi kan godt lide at være ude at lege og bevæge os, få brugt kroppen, det kan eks. være en tur i skoven, en gå tur eller leg i haven. Alt efter hvordan vejret er, er vi ude hverdag. Aktiviteter indenfor kan være kreative, vi tager sangkufferne frem, synger, danser, leger, tumler, lave mad, får massage osv.
+        </p>
+            </div>
+            <div class="Content2">
+        <p class="Content">
+            Der bliver lavet en aktivitetskalender, for hver mdr. der bliver sendt ud på mail, med det ting der er fastlagt, den er ikke mere fast, at der godt kan komme ændringer til den. Informationer til forældrene bliver også skrevet på kalenderen. I vinter perioden er vi til gymnastik ca. en gang om ugen i hallen her i Holbøl. Efterår og forår er vi i samarbejde med Holbøl Kirke i Kravle kirken, hvor vi synger, leger og sanser. Vi besøger Svalen, børnehaven her i byen. Vi har et sammenarbejde med andre private børnepasser, hvor vi har tema dage, som fastelavn, jule, påske og mange andre oplevelser.</p>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <center>
+            <div class="Information">
+                <div class="InformationInfo">
+                    <p>Storkereden - DGI idræt, leg og bevægelse</p>
+                </div>
+                    <p class="mellemrum"></p>
+                <div class="InformationInfo">
+                    <p>Anne-Mette & Torben Holbeck</p>
+                </div>
+                    <p class="mellemrum"></p>
+                <div class="InformationInfo">
+                    <p>Rugmarken 2. Holbøl. 6340 Kruså</p>
+                </div>
+                    <p class="mellemrum"></p>
+                <div class="InformationInfo">
+                    <p>Tlf. 30 26 73 30</p>
+                </div>
+                    <p class="mellemrum"></p>
+                <div class="InformationInfo">
+                    <p>mail@storkereden.net</p>
+                </div>
+            </div>
+        </center>
+        
+    </body>
+    
+    <script>
+        let stickyElement = document.querySelector('.sticky');
+        let stickyPoint = stickyElement.offsetTop;
+      
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset >= stickyPoint) {
+                stickyElement.style.position = 'fixed';
+                stickyElement.style.top = '0';
+            } else {
+                stickyElement.style.position = 'sticky';
+                stickyElement.style.top = '20%'; /* Change this value to match the initial sticky point */
+            }
+        });
+      
+        let isSlidingPanelShown = false;
+        let slidingPanelTimeout;
+      
+        function showPanel() {
+            if (!isSlidingPanelShown) {
+                const slidingPanel = document.querySelector('.sliding-panel');
+                slidingPanel.style.display = 'block';
+                setTimeout(() => {
+                    slidingPanel.style.right = '0';
+                    isSlidingPanelShown = true;
+                }, 10);
+            }
+            clearTimeout(slidingPanelTimeout);
+        }
+      
+        function hidePanel() {
+            const slidingPanel = document.querySelector('.sliding-panel');
+            slidingPanel.style.right = '-30vw';
+            isSlidingPanelShown = false;
+            slidingPanelTimeout = setTimeout(() => {
+                slidingPanel.style.display = 'none';
+            }, 500);
+        }
+</script>
+    
+</html>

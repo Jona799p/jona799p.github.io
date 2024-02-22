@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html> 
+    <header>
+        <title>Storkereden</title>
+        <link rel="stylesheet" type="text/css" href="IndexCSS.css">
+            <meta name=”viewport” content=”width=device-width” />
+    </header>
+    
+    
+    <body class="Body">
+    <div class="Center" style="background-color: white">
+        
+        <div class="Top">
+            <img id="TopImage" src="Billeder/Nyt%20storkereden%20logo1.png">
+        </div> 
+        
+    </div>
+        
+   <div class="Center">
+        <nav class="sticky">
+            <ul>
+                <li><a href="index.html">Hovedmenu</a></li>
+                <li><a href="Hverdagen.html">Hverdagen</a></li>
+                <li><a href="Hvem%20er%20vi.html" style="background-color: #CDD9B6">Hvem er vi?</a></li>
+                <li><a href="Vores%20rammer.html">Vores rammer</a></li>
+                <li class="dropdown" onmouseleave="hidePanel()">
+                    <a class="dropdown-toggle" href="#" onmouseenter="showPanel()">Yderligere information ≡</a>
+                    <div class="sliding-panel" onmouseenter="showPanel()">
+                        <ul>
+                            <li><a href="subpage1.html">Vores målsætning</a></li>
+                            <li><a href="subpage2.html">Kursus</a></li>
+                            <li><a href="subpage3.html">Forældresamarbejde</a></li>
+                            <li><a href="subpage4.html">DGI idræt, leg & bevægelse</a></li>
+                            <li><a href="subpage5.html">Ledige pladser</a></li>
+                            <li><a href="subpage6.html">Vikar</a></li>
+                            <li><a href="subpage7.html">Kontakt</a></li>
+                            <li><a href="subpage8.html">Samarbejde</a></li>
+                            <li><a href="subpage9.html">Tilskud</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        
+        
+   <div class="underline">
+<div class="Center">
+    <div class="Bigpagebox">
+        <div class="Pagebox">
+            
+            <div class="Content2">
+            <p class="Content">
+                Vi hedder Anne-Mette og Torben Holbeck. Gift i år 2004, sammen har vi 3 dejlige piger, der alle går i skole her i byen. Vi bor i Holbøl i et bjælkehus, vi selv har bygget med dejlig stor have – tæt på naturen. Anne-Mette er født i 1978, har en uddannelse som blomsterdekoratør og har arbejdet med det i mange år. Har været ansat som kommunal dagpleje. Startede op som privat børnepasser i 2011.
+                </p>
+            </div> 
+            <img id="Hovedmenu" src="Billeder/4.jpg"> 
+            
+            <div class="ContentColor" style="margin-bottom: 5%"><p class="Content">Torben er født i 1976, har en uddannelse som tømre og har altid arbejdet med det. Ved siden af, har han været vikar i Storkereden siden år 2012. Startede op som privat børnepasser i 2017. Udover arbejde, er vi aktive i HFIF i Holbøl, hvor vi har hver vores hold, Anne-Mette instruktør for ”Tumlebillerne” forældre – barn gymnastik og Torben ” kun for mænd”. Gode til at give en hjælpende hånd, hist og her i Holbøl. Vi trives rigtig godt med vores arbejde, nyder at vi arbejder sammen, vi kan hver især bidrage med forskellige ting i hverdagen, ideer og projekter.</p></div>
+            
+            <img id="Hovedmenu" src="Billeder/5.jpg"> 
+            <div class="Content2">
+            <p class="Content">
+                Der udover har vi kaniner og en rigtig god familie hund, labradoren Momse (den er aldrig sammen med børnene uden vi er der).
+                </p>
+            </div> 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+        </div>
+        </div>
+        <center>
+        <div class="Information">
+        <div class="InformationInfo">
+            <p>Storkereden - DGI idræt, leg og bevægelse</p>
+        </div>
+            <p class="mellemrum"></p>
+        <div class="InformationInfo">
+            <p>Anne-Mette & Torben Holbeck</p>
+        </div>
+            <p class="mellemrum"></p>
+        <div class="InformationInfo">
+            <p>Rugmarken 2. Holbøl. 6340 Kruså</p>
+        </div>
+            <p class="mellemrum"></p>
+        <div class="InformationInfo">
+            <p>Tlf. 30 26 73 30</p>
+        </div>
+            <p class="mellemrum"></p>
+        <div class="InformationInfo">
+            <p>mail@storkereden.net</p>
+        </div>
+        </div>
+        </center>
+    </body>
+    
+    <script>
+        var stickyElement = document.querySelector('.sticky');
+        var stickyPoint = stickyElement.offsetTop;
+      
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset >= stickyPoint) {
+                stickyElement.style.position = 'fixed';
+                stickyElement.style.top = '0';
+            } else {
+                stickyElement.style.position = 'sticky';
+                stickyElement.style.top = '20%'; /* Change this value to match the initial sticky point */
+            }
+        });
+      
+        let isSlidingPanelShown = false;
+        let slidingPanelTimeout;
+      
+        function showPanel() {
+            if (!isSlidingPanelShown) {
+                const slidingPanel = document.querySelector('.sliding-panel');
+                slidingPanel.style.display = 'block';
+                setTimeout(() => {
+                    slidingPanel.style.right = '0';
+                    isSlidingPanelShown = true;
+                }, 10);
+            }
+            clearTimeout(slidingPanelTimeout);
+        }
+      
+        function hidePanel() {
+            const slidingPanel = document.querySelector('.sliding-panel');
+            slidingPanel.style.right = '-30vw';
+            isSlidingPanelShown = false;
+            slidingPanelTimeout = setTimeout(() => {
+                slidingPanel.style.display = 'none';
+            }, 500);
+        }
+</script>
+    
+</html>

@@ -1,0 +1,424 @@
+
+:root {
+    --font-color: #58585A;
+    --font-family: sans-serif;
+    --background-menu-color: white;
+    
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.ContentColor {
+    background-color: #CDD9B6;
+    padding: 2vw;
+    width: 45vw;
+    border-radius: 15px;
+    margin-top: 2vw;
+}
+
+
+.Top {
+    background-image: url(Billeder/F%C3%A6rdig4.png);
+    height: 15vw;
+    width: 40vw;
+    padding: 1vw;
+    border: 0.2vw solid black;
+    border-bottom-color: #F15A3B;
+    border-radius: 0.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#TopImage {
+    width: 40vw;
+    height: 15vw;
+    display: block;
+}
+
+.Content {
+    margin: 2vw 2vw 0 2vw; /*1, top 2, right 3, bottom 4, left */
+    font-weight: bold;
+    font-size: 0.9vw;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-bottom: 1vw;
+}
+
+#Hovedmenu {
+    margin-top: 2vw;
+    width: 25vw;
+    border-radius: 0.9vw;
+    border: var(--font-color) solid 3px;
+}
+.h1, .h2 {
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    font-family: var(--font-family);
+}
+
+.h1 {
+    font-size: 2vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 1vw;
+    margin-bottom: 2.5vw;
+    text-align-last: center;
+}
+
+h3 {
+    margin-left: 1vw;
+    width: 100vw;
+}
+
+ul {
+    background-color: var(--background-menu-color);
+    border-bottom: 0.10vw black solid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 4.5vw
+
+}
+
+li {
+    display: inline-block;
+    margin: 0vw;
+    margin-bottom: 1.15vw;
+    height: 2.5vw;
+}
+
+li a {
+    display: block;
+    color: var(--font-color);
+    text-align: center;
+    padding: 1vw 3vw;
+    text-decoration: none;
+    border-radius: 0.3vw;
+    font-size: 0.9vw;
+    font-weight: bold;
+    margin: 0.6vw;
+}
+
+li a:hover {
+    background-color: #CDD9B6;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sticky {
+    position: sticky;
+    top: 1vw;
+    z-index: 999;  
+    background-color: var(--background-menu-color);
+    justify-content: center;
+    text-align: center;
+    display: block;
+    width: 500vw;
+    height: 4.5vw;
+}
+
+.Bigpagebox {
+    background-color: var(--background-menu-color);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 40vw;
+}
+
+.Pagebox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 38vw;
+    
+}
+
+.Information {
+    display: flex;
+    width: 100%;
+    background-color: #CDD9B6;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    height: 2vw;
+    border-radius: 1vw;
+}
+
+.InformationInfo {
+    margin-left: 3vw;
+    font-weight: bold;
+    font-size: 0.6vw;
+}
+
+.mellemrum {
+    margin-left: 1vw;
+    font-size: 0.8rem;
+}
+
+.Indhold1 {
+    display: flex;
+    text-align: center;
+}
+
+.InfoBox {
+    margin: 3vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0.8vw;
+    padding: 4vw;
+    border: 0.5vw solid #CDD9B6;
+}
+
+/* Hide the sliding panel by default */
+.sliding-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Set the initial position outside the viewport */
+    width: 30vw; /* Adjust the width as needed */
+    height: 100%;
+    background-color: var(--background-menu-color); /* White background */
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow for a visual effect */
+    transition: right 0.5s ease; /* Add smooth sliding animation */
+}
+
+.sliding-panel.show {
+    right: 0; /* Show the panel by adjusting the right property */
+}
+
+/* Adjust the positioning of the dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+/* Style the subpages in the sliding panel */
+.sliding-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sliding-panel li {
+    width: 100%;
+    padding: 0.2vw;
+}
+
+/* Remove the border-bottom from the sliding panel UL */
+.sliding-panel ul {
+    border-bottom: none;
+}
+
+.sliding-panel img {
+    display: block;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* Media Query for responsive design */
+@media only screen and (max-width: 800px) {
+    
+    .Top {
+    width: 30vw;
+    height: 15vw;
+    display: block;
+    }
+    
+        /* Adjust the width of the sliding panel for mobile */
+    .sliding-panel {
+        width: 55vw; /* You can adjust the width as per your preference */
+        
+    }
+    
+    .sliding-panel li {
+        padding: 4vw
+        
+    }
+    
+    .h1 {
+        font-size: 4vw; /* Updated font size for "Velkommen til Storkereden" */
+    }
+
+    .h2 {
+        font-size: 2.5vw; /* Updated font size for "DGI Idræt, leg og bevægelse" */
+    }
+    
+    .Content {
+        /* ... (existing styles) ... */
+        font-size: 2.5vw; /* Increase font size for better readability */
+        width: 100%; /* Adjust width to be 100% of the container */
+        text-align: justify; /* Align text justified to fill more horizontally */
+    }
+
+    .ContentColor {
+        /* ... (existing styles) ... */
+        padding: 5vw; /* Increase padding to fill more of the screen */
+        width: 100%; /* Adjust width to be 100% of the container */
+    }
+
+    .Content2 {
+        /* ... (existing styles) ... */
+        width: 100%; /* Adjust width to be 100% of the container */
+        text-align: justify; /* Align text justified to fill more horizontally */
+    }
+
+    .InformationInfo {
+        /* ... (existing styles) ... */
+        font-size: 4.5vw; /* Increase font size for better readability */
+        width: 100%; /* Adjust width to be 100% of the container */
+        text-align: center; /* Align text center for better appearance */
+    }
+
+    .Bigpagebox {
+        /* ... (existing styles) ... */
+        width: 100%; /* Adjust width to be 100% of the container */
+    }
+
+    .Pagebox {
+        /* ... (existing styles) ... */
+        width: 100%; /* Adjust width to be 100% of the container */
+    }
+
+    #Hovedmenu, #TopImage {
+        width: 90%; /* Adjust width to be 90% of the container */
+        margin-left: auto; /* Center the element horizontally */
+        margin-right: auto; /* Center the element horizontally */
+        display: block;
+    }
+
+    .Information {
+        /* ... (existing styles) ... */
+        width: 100%; /* Adjust width to be 100% of the container */
+    }
+
+    .underline {
+        /* ... (existing styles) ... */
+        width: 100%; /* Adjust width to be 100% of the container */
+    }
+    
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Top {
+        width: 100%;
+    }
+
+    #TopImage {
+        width: 80%;
+    }
+
+    .sticky {
+        width: 100%;
+    }
+
+    .Bigpagebox {
+        width: 95%; /* Adjust the width as needed */
+    }
+
+    .Pagebox {
+        width: 100%; /* Adjust the width as needed */
+    }
+
+    .ContentColor,
+    .Content2 {
+        width: 95%; /* Adjust the width as needed */
+    }
+
+    .ContentColor {
+        margin-top: 5%;
+        padding: 3vw; /* Adjust padding as needed */
+    }
+
+    .Content {
+        font-size: 2.5vw; /* Updated font size */
+        text-align: left; /* Text comes from the left */
+    }
+    
+
+    li a {
+        font-size: 2.2vw; /* Updated font size for menu items */
+        display: block;
+        color: var(--font-color);
+        text-align: center;
+        padding: 1vw 3vw;
+        text-decoration: none;
+        border-radius: 0.3vw;
+        margin-left: 0.6vw;
+        margin-right: 0.6vw;
+    }
+
+    .Information {
+        width: 95%; /* Adjust the width as needed */
+        height: 4.5vw;
+        display: none;
+    }
+
+    .InformationInfo {
+        font-size: 1.2vw; /* Updated font size */
+        position: relative;
+        text-align: center;
+    }
+
+    .InformationInfo p {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        padding-left: 5%;
+    }
+    
+    ul {
+        height: 10vw
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--background-menu-color); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CDD9B6; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-menu-color); 
+}
